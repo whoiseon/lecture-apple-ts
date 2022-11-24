@@ -19,3 +19,16 @@ function myFnc4(x) {
     arr2[0] = x;
 }
 myFnc4(123);
+function animalFnc(animal) {
+    if ('swim' in animal) {
+        animal.swim = 'true';
+    }
+}
+function carOrBike(x) {
+    if (x.wheel === '2개') {
+        console.log('Bike');
+    }
+    else {
+        console.log('Car');
+    }
+}

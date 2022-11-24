@@ -25,7 +25,6 @@ const girlFriend: GirlfriendType = {
 // type alias union
 type Name = string;
 type Age = number;
-type Person = Name | Age;
 
 type PositionX = {
   x: number,

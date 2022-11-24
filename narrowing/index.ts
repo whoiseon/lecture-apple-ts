@@ -27,3 +27,32 @@ function myFnc4(x: number | string) {
 }
 
 myFnc4(123);
+
+// narrowing tip
+
+type Fish = { swim: string }
+type Bird = { fly: string }
+
+function animalFnc(animal: Fish | Bird) {
+  if ('swim' in animal) {
+    animal.swim = 'true';
+  }
+}
+
+type CarType = {
+  wheel: '4개',
+  color: string,
+}
+
+type BikeType = {
+  wheel: '2개',
+  color: string,
+}
+
+function carOrBike(x: CarType | BikeType) {
+  if (x.wheel === '2개') {
+    console.log('Bike');
+  } else {
+    console.log('Car');
+  }
+}
